@@ -1,0 +1,49 @@
+.Error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 100%;
+  min-height: 230px;
+  background: #f5f6f7;
+}
+
+.Block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Icon {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.Caption {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.Text {
+  margin: 0 auto;
+  max-width: 356px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1023px) {
+  .Error {
+    padding: 40px 0;
+  }
+}

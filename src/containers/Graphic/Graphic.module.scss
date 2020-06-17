@@ -1,0 +1,129 @@
+.Graphic {
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 100%;
+  background: #f5f6f7;
+}
+
+.Wrapper {
+  margin: 0 auto;
+  max-width: 87%;
+}
+
+.Caption {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.Block {
+  display: block;
+}
+
+.Head {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #1a1b22;
+}
+
+.Date {
+  width: 60px;
+  margin-right: 40px;
+}
+
+.Count {
+  display: block;
+}
+
+.Rows {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 0 92px;
+}
+
+.Cell {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.Columns {
+  display: flex;
+}
+
+.ColumnsY {
+  width: 104px;
+}
+
+.ColumnY {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.ColumnY:not(:first-child) {
+  margin-top: 56px;
+}
+
+.ColumnY:first-child {
+  margin: 18px 0 0;
+}
+
+.ColumnsX {
+  width: 100%;
+}
+
+.ColumnX {
+  display: flex;
+  align-items: center;
+  margin-top: 56px;
+  margin-bottom: 0;
+  padding: 4px 0 4px 6px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  background: #2f71e5;
+}
+
+.ColumnX:nth-child(1) {
+  margin-top: 18px;
+}
+
+@media screen and (max-width: 1023px) {
+  .Graphic {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Graphic {
+    padding: 25px 0;
+  }
+
+  .Wrapper {
+    max-width: 90%;
+  }
+
+  .Caption {
+    margin-bottom: 16px;
+  }
+
+  .Rows {
+    display: none;
+  }
+}

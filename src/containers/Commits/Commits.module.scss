@@ -1,0 +1,94 @@
+.Commits {
+  position: relative;
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 100%;
+  background: #f5f6f7;
+}
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 87%;
+}
+
+.Block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.Caption {
+  margin: 0;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.Analytics {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.Arrow {
+  display: inline;
+}
+
+@media screen and (max-width: 1240px) {
+  .Commits {
+    padding: 40px 0;
+  }
+
+  .Block {
+    margin-bottom: 32px;
+  }
+
+  .Caption {
+    max-width: 336px;
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Commits {
+    padding: 30px 0;
+  }
+
+  .Wrapper {
+    max-width: 90%;
+  }
+
+  .Block {
+    margin-bottom: 16px;
+  }
+
+  .Analytics {
+    position: absolute;
+    z-index: 50;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 32px;
+    padding: 15px 69px;
+    width: 0 auto;
+    border: 1px solid #000;
+    border-radius: 80px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  .Arrow {
+    display: none;
+  }
+}

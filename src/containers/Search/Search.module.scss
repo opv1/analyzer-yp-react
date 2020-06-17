@@ -1,0 +1,69 @@
+.Search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 87%;
+}
+
+.Block {
+  margin-top: 80px;
+  margin-bottom: 64px;
+}
+
+.Caption {
+  margin: 0;
+  margin-bottom: 32px;
+  max-width: 545px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 64px;
+}
+
+.Description {
+  margin: 0;
+  max-width: 545px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1023px) {
+  .Caption {
+    max-width: 385px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .Description {
+    max-width: 452px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Wrapper {
+    max-width: 90%;
+  }
+
+  .Block {
+    margin-top: 30px;
+  }
+
+  .Description {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

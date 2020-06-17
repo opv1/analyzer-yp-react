@@ -1,0 +1,40 @@
+.Input {
+  margin: 0 auto;
+  min-width: 548px;
+  min-height: 64px;
+  padding: 20px 25px;
+  border: 1px solid #d1d2d6;
+  border-radius: 100px;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  outline: none;
+  backdrop-filter: blur(8px);
+}
+
+.Input:hover {
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.5);
+  transition: box-shadow 1s ease;
+}
+
+.Input:focus {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 1023px) {
+  .Input {
+    min-width: 450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Input {
+    margin-bottom: 16px;
+    padding: 15px 25px;
+    min-width: 288px;
+    min-height: 54px;
+  }
+}

@@ -1,0 +1,85 @@
+.Stack {
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 100%;
+  background: #f5f6f7;
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 87%;
+}
+
+.Caption {
+  margin: 0;
+  max-width: 344px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.Technology {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.Icon {
+  margin: 0 15px;
+}
+
+@media screen and (max-width: 1240px) {
+  .Stack {
+    padding: 40px 0;
+  }
+
+  .Caption {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 1124px) {
+  .Caption {
+    margin-bottom: 40px;
+  }
+
+  .Icon {
+    margin: 0 29px;
+  }
+
+  .Icon:first-child {
+    margin-left: 0;
+  }
+
+  .Icon:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Stack {
+    padding: 30px 0;
+  }
+
+  .Wrapper {
+    max-width: 90%;
+  }
+
+  .Icon {
+    margin: 10px;
+  }
+
+  .Icon:first-child {
+    margin-left: 10px;
+  }
+
+  .Icon:last-child {
+    margin-right: 10px;
+  }
+}

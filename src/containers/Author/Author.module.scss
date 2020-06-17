@@ -1,0 +1,96 @@
+.Author {
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.Wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 87%;
+}
+
+.Photo {
+  margin: 0;
+  width: 464px;
+  height: 464px;
+  border-radius: 1000px;
+  background-image: url(https://avatars1.githubusercontent.com/u/55979609?s=400&v=4);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 56px;
+  max-width: 600px;
+}
+
+.Caption {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.Text {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.Text:last-child {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .Author {
+    padding: 40px 0;
+  }
+
+  .Photo {
+    max-width: 232px;
+    max-height: 232px;
+  }
+
+  .Info {
+    margin-left: 32px;
+  }
+
+  .Caption {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .Text:last-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Author {
+    padding: 30px 0;
+  }
+
+  .Wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+  }
+
+  .Info {
+    margin-top: 24px;
+    margin-left: 0;
+  }
+
+  .Caption {
+    margin-bottom: 16px;
+  }
+}

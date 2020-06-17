@@ -11,7 +11,7 @@ class Layout extends Component {
 
   componentDidUpdate(prevProps) {
     if (this.props.location.pathname !== prevProps.location.pathname) {
-      if (this.props.location.pathname === '/') {
+      if (this.props.location.pathname === '/yp-graduate-work-react') {
         this.setState({
           type: 'withBackground',
         });
@@ -24,7 +24,7 @@ class Layout extends Component {
   }
 
   componentDidMount() {
-    if (this.props.location.pathname === '/') {
+    if (this.props.location.pathname === '/yp-graduate-work-react') {
       this.setState({
         type: 'withBackground',
       });

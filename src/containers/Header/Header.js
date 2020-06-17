@@ -67,7 +67,7 @@ class Header extends Component {
                     },
                     borderBottom: `2px solid ${this.state.color}`,
                   }}
-                  to='/'
+                  to='/yp-graduate-work-react'
                 >
                   Главная
                 </NavLink>
@@ -82,7 +82,7 @@ class Header extends Component {
                     },
                     borderBottom: `2px solid ${this.state.color}`,
                   }}
-                  to='/about'
+                  to='/yp-graduate-work-react/about'
                 >
                   О проекте
                 </NavLink>

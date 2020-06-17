@@ -10,7 +10,10 @@ class Result extends Component {
         <div className={classes.Wrapper}>
           <div className={classes.Block}>
             <h2 className={classes.Caption}>Результаты поиска</h2>
-            <NavLink className={classes.Link} to='/analytics'>
+            <NavLink
+              className={classes.Link}
+              to='/yp-graduate-work-react/analytics'
+            >
               Посмотреть аналитику&nbsp;
               <span className={classes.Arrow}>&#8250;</span>
             </NavLink>

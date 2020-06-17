@@ -11,9 +11,12 @@ class App extends Component {
     return (
       <Switch>
         <Layout>
-          <Route path='/' exact component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/analytics' component={Analytics} />
+          <Route path='/yp-graduate-work-react' exact component={Home} />
+          <Route path='/yp-graduate-work-react/about' component={About} />
+          <Route
+            path='/yp-graduate-work-react/analytics'
+            component={Analytics}
+          />
         </Layout>
       </Switch>
     );

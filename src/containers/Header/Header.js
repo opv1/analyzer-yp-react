@@ -50,7 +50,7 @@ class Header extends Component {
           <Link
             className={classes.Caption}
             style={{ color: this.state.color }}
-            to='/'
+            to='/yp-graduate-work-react'
           >
             NewsAnalyzer
           </Link>

@@ -12,12 +12,15 @@ const Footer = () => {
         <nav className={classes.Navigation}>
           <ul className={classes.List}>
             <li className={classes.Item}>
-              <NavLink className={classes.Link} to='/'>
+              <NavLink className={classes.Link} to='/yp-graduate-work-react'>
                 Главная
               </NavLink>
             </li>
             <li className={classes.Item}>
-              <NavLink className={classes.Link} to='/about'>
+              <NavLink
+                className={classes.Link}
+                to='/yp-graduate-work-react/about'
+              >
                 О проекте
               </NavLink>
             </li>

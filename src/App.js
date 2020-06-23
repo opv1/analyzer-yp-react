@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Switch>
       <Layout>
-        <Route exact path='/yp-graduate-work-react' component={Home} />
+        <Route exact path='/yp-graduate-work-react/' component={Home} />
         <Route path='/yp-graduate-work-react/about' component={About} />
         <Route path='/yp-graduate-work-react/analytics' component={Analytics} />
       </Layout>

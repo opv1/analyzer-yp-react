@@ -57,7 +57,7 @@ class Header extends Component {
           <Link
             className={classes.Caption}
             style={{ color: this.state.color }}
-            to='/yp-graduate-work-react'
+            to='/yp-graduate-work-react/'
           >
             NewsAnalyzer
           </Link>
@@ -72,7 +72,7 @@ class Header extends Component {
                     color: this.state.color,
                     borderBottom: `2px solid ${this.state.color}`,
                   }}
-                  to='/yp-graduate-work-react'
+                  to='/yp-graduate-work-react/'
                 >
                   Главная
                 </NavLink>

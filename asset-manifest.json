@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/yp-graduate-work-react/static/css/main.283b52fc.chunk.css",
-    "main.js": "/yp-graduate-work-react/static/js/main.2e87cf4c.chunk.js",
-    "main.js.map": "/yp-graduate-work-react/static/js/main.2e87cf4c.chunk.js.map",
-    "runtime-main.js": "/yp-graduate-work-react/static/js/runtime-main.9569c54e.js",
-    "runtime-main.js.map": "/yp-graduate-work-react/static/js/runtime-main.9569c54e.js.map",
-    "static/js/2.ad5a5035.chunk.js": "/yp-graduate-work-react/static/js/2.ad5a5035.chunk.js",
-    "static/js/2.ad5a5035.chunk.js.map": "/yp-graduate-work-react/static/js/2.ad5a5035.chunk.js.map",
+    "main.css": "/yp-graduate-work-react/static/css/main.a7226a53.chunk.css",
+    "main.js": "/yp-graduate-work-react/static/js/main.bb837093.chunk.js",
+    "main.js.map": "/yp-graduate-work-react/static/js/main.bb837093.chunk.js.map",
+    "runtime-main.js": "/yp-graduate-work-react/static/js/runtime-main.47eefa6e.js",
+    "runtime-main.js.map": "/yp-graduate-work-react/static/js/runtime-main.47eefa6e.js.map",
+    "static/css/2.b75ed488.chunk.css": "/yp-graduate-work-react/static/css/2.b75ed488.chunk.css",
+    "static/js/2.438f734d.chunk.js": "/yp-graduate-work-react/static/js/2.438f734d.chunk.js",
+    "static/js/2.438f734d.chunk.js.map": "/yp-graduate-work-react/static/js/2.438f734d.chunk.js.map",
     "index.html": "/yp-graduate-work-react/index.html",
-    "precache-manifest.f1806b4ba70cd465dc4c945b20230ee8.js": "/yp-graduate-work-react/precache-manifest.f1806b4ba70cd465dc4c945b20230ee8.js",
+    "precache-manifest.610dd8b201fecf34c25aedef29b08e94.js": "/yp-graduate-work-react/precache-manifest.610dd8b201fecf34c25aedef29b08e94.js",
     "service-worker.js": "/yp-graduate-work-react/service-worker.js",
-    "static/css/main.283b52fc.chunk.css.map": "/yp-graduate-work-react/static/css/main.283b52fc.chunk.css.map",
-    "static/js/2.ad5a5035.chunk.js.LICENSE.txt": "/yp-graduate-work-react/static/js/2.ad5a5035.chunk.js.LICENSE.txt",
+    "static/css/2.b75ed488.chunk.css.map": "/yp-graduate-work-react/static/css/2.b75ed488.chunk.css.map",
+    "static/css/main.a7226a53.chunk.css.map": "/yp-graduate-work-react/static/css/main.a7226a53.chunk.css.map",
+    "static/js/2.438f734d.chunk.js.LICENSE.txt": "/yp-graduate-work-react/static/js/2.438f734d.chunk.js.LICENSE.txt",
     "static/media/Layout.module.scss": "/yp-graduate-work-react/static/media/background.a731c6ae.png",
     "static/media/css.svg": "/yp-graduate-work-react/static/media/css.ff5d45de.svg",
     "static/media/fb.svg": "/yp-graduate-work-react/static/media/fb.a3502a5e.svg",
@@ -20,12 +22,14 @@
     "static/media/js.svg": "/yp-graduate-work-react/static/media/js.11a4c1c3.svg",
     "static/media/not-found.svg": "/yp-graduate-work-react/static/media/not-found.5af0def6.svg",
     "static/media/App.module.scss": "/yp-graduate-work-react/static/media/sourcesanspro-regular.49d8d828.woff",
+    "static/media/slick-theme.css": "/yp-graduate-work-react/static/media/slick.f97e3bbf.svg",
     "static/media/webpack.svg": "/yp-graduate-work-react/static/media/webpack.2f25192a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9569c54e.js",
-    "static/js/2.ad5a5035.chunk.js",
-    "static/css/main.283b52fc.chunk.css",
-    "static/js/main.2e87cf4c.chunk.js"
+    "static/js/runtime-main.47eefa6e.js",
+    "static/css/2.b75ed488.chunk.css",
+    "static/js/2.438f734d.chunk.js",
+    "static/css/main.a7226a53.chunk.css",
+    "static/js/main.bb837093.chunk.js"
   ]
 }

@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6db93dcdead33d0dfeaf2b1b12598a73",
+    "revision": "4b965a743570f37a2a26b3d23dbc012c",
     "url": "/yp-graduate-work-react/index.html"
   },
   {
-    "revision": "bf8f52b955020b128e61",
-    "url": "/yp-graduate-work-react/static/css/main.283b52fc.chunk.css"
+    "revision": "8e65794a9e1473d18859",
+    "url": "/yp-graduate-work-react/static/css/2.b75ed488.chunk.css"
   },
   {
-    "revision": "02e8b31ba2c7114b9725",
-    "url": "/yp-graduate-work-react/static/js/2.ad5a5035.chunk.js"
+    "revision": "5331ecd2abd005df3ba1",
+    "url": "/yp-graduate-work-react/static/css/main.a7226a53.chunk.css"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/yp-graduate-work-react/static/js/2.ad5a5035.chunk.js.LICENSE.txt"
+    "revision": "8e65794a9e1473d18859",
+    "url": "/yp-graduate-work-react/static/js/2.438f734d.chunk.js"
   },
   {
-    "revision": "bf8f52b955020b128e61",
-    "url": "/yp-graduate-work-react/static/js/main.2e87cf4c.chunk.js"
+    "revision": "3453b8997016469371284a28c0e873e2",
+    "url": "/yp-graduate-work-react/static/js/2.438f734d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6a9862f85867e66dbd43",
-    "url": "/yp-graduate-work-react/static/js/runtime-main.9569c54e.js"
+    "revision": "5331ecd2abd005df3ba1",
+    "url": "/yp-graduate-work-react/static/js/main.bb837093.chunk.js"
+  },
+  {
+    "revision": "d1e45e7125d891358d23",
+    "url": "/yp-graduate-work-react/static/js/runtime-main.47eefa6e.js"
   },
   {
     "revision": "a731c6ae30c54fd315686ce1a32b9db9",
@@ -62,6 +66,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "594bcf8bf5ddbb7302400b1319270585",
     "url": "/yp-graduate-work-react/static/media/robotoslab-regular.594bcf8b.woff"
+  },
+  {
+    "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
+    "url": "/yp-graduate-work-react/static/media/slick.b7c9e1e4.woff"
+  },
+  {
+    "revision": "ced611daf7709cc778da928fec876475",
+    "url": "/yp-graduate-work-react/static/media/slick.ced611da.eot"
+  },
+  {
+    "revision": "d41f55a78e6f49a5512878df1737e58a",
+    "url": "/yp-graduate-work-react/static/media/slick.d41f55a7.ttf"
+  },
+  {
+    "revision": "f97e3bbf73254b0112091d0192f17aec",
+    "url": "/yp-graduate-work-react/static/media/slick.f97e3bbf.svg"
   },
   {
     "revision": "49d8d8285e8bc3047dac602de489bfb0",

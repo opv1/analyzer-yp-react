@@ -7,11 +7,21 @@ import Author from '../../containers/Author/Author';
 import Commits from '../../containers/Commits/Commits';
 
 class About extends Component {
+  state = {
+    user: 'opv1',
+    repository: 'yp-graduate-work-react',
+    commits: [],
+  };
+
   async componentDidMount() {
     try {
       const responseCommits = await axiosCommits.get(
-        'https://api.github.com/repos/opv1/yp-graduate-work-react/commits?'
+        `/repos/${this.state.user}/${this.state.repository}/commits?`
       );
+
+      this.setState({
+        commits: responseCommits.data,
+      });
     } catch (error) {
       console.log(error);
     }
@@ -23,7 +33,7 @@ class About extends Component {
         <Customer />
         <Stack />
         <Author />
-        <Commits />
+        <Commits commits={this.state.commits} />
       </Auxiliary>
     );
   }

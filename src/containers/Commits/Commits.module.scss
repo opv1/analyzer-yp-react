@@ -1,5 +1,4 @@
 .Commits {
-  position: relative;
   margin: 0 auto;
   padding: 80px 0;
   width: 100%;
@@ -7,10 +6,7 @@
 }
 
 .Wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   margin: 0 auto;
   max-width: 87%;
 }
@@ -45,6 +41,11 @@
   display: inline;
 }
 
+.List {
+  display: block;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1240px) {
   .Commits {
     padding: 40px 0;
@@ -64,6 +65,7 @@
 @media screen and (max-width: 767px) {
   .Commits {
     padding: 30px 0;
+    padding-bottom: 120px;
   }
 
   .Wrapper {
@@ -79,9 +81,9 @@
     z-index: 50;
     bottom: 0;
     left: 50%;
-    margin-bottom: 32px;
-    padding: 15px 69px;
     width: 0 auto;
+    margin-bottom: -90px;
+    padding: 15px 69px;
     border: 1px solid #000;
     border-radius: 80px;
     transform: translateX(-50%);

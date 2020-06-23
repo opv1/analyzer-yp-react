@@ -1,20 +1,31 @@
 import React from 'react';
 import classes from './Input.module.scss';
 
-const Input = (props) => {
-  const cls = [classes.Input, classes[props.type]];
+const Input = ({
+  onChange,
+  type,
+  value,
+  name,
+  placeholder,
+  title,
+  pattern,
+  minLength,
+  maxLength,
+}) => {
+  const cls = [classes.Input, classes[type]];
 
   return (
     <input
       className={cls.join(' ')}
-      onChange={props.onChange}
-      name={props.name}
-      type={props.type}
-      placeholder={props.placeholder}
-      title={props.title}
-      /*       minlength={props.validation.minlength}
-      maxlength={props.validation.maxlength} */
-      pattern={props.pattern}
+      onChange={onChange}
+      value={value}
+      name={name}
+      type={type}
+      placeholder={placeholder}
+      title={title}
+      pattern={pattern}
+      minLength={minLength}
+      maxLength={maxLength}
       required
     ></input>
   );

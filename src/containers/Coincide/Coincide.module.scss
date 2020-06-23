@@ -1,0 +1,67 @@
+.Coincide {
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 87%;
+}
+
+.Caption {
+  margin: 0;
+  margin-bottom: 14px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.List {
+  margin: 0;
+  padding: 0;
+}
+
+.Item {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  list-style-type: none;
+}
+
+.Count {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1023px) {
+  .Coincide {
+    padding: 40px 0;
+  }
+
+  .Caption {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Coincide {
+    padding: 25px 0;
+  }
+
+  .Wrapper {
+    max-width: 90%;
+  }
+
+  .Caption {
+    margin-bottom: 16px;
+  }
+}

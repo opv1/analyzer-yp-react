@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classes from './Header.module.scss';
+import { css } from 'glamor';
 import { Link, NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -39,6 +40,12 @@ class Header extends Component {
   }
 
   render() {
+    const style = {
+      NavLink: {
+        ':hover': { color: this.state.color },
+      },
+    };
+
     return (
       <header
         className={classes.Header}
@@ -50,7 +57,7 @@ class Header extends Component {
           <Link
             className={classes.Caption}
             style={{ color: this.state.color }}
-            to='/yp-graduate-work-react/'
+            to='/yp-graduate-work-react'
           >
             NewsAnalyzer
           </Link>
@@ -58,16 +65,14 @@ class Header extends Component {
             <ul className={classes.List}>
               <li className={classes.Item}>
                 <NavLink
-                  className={classes.Link}
                   exact
+                  className={classes.Link}
+                  {...css(style.NavLink)}
                   activeStyle={{
                     color: this.state.color,
-                    ':hover': {
-                      color: this.state.color,
-                    },
                     borderBottom: `2px solid ${this.state.color}`,
                   }}
-                  to='/yp-graduate-work-react/'
+                  to='/yp-graduate-work-react'
                 >
                   Главная
                 </NavLink>
@@ -75,11 +80,9 @@ class Header extends Component {
               <li className={classes.Item}>
                 <NavLink
                   className={classes.Link}
+                  {...css(style.NavLink)}
                   activeStyle={{
                     color: this.state.color,
-                    ':hover': {
-                      color: this.state.color,
-                    },
                     borderBottom: `2px solid ${this.state.color}`,
                   }}
                   to='/yp-graduate-work-react/about'

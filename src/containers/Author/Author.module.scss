@@ -44,10 +44,9 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-}
-
-.Text:last-child {
-  margin-top: 20px;
+  &:last-child {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -69,8 +68,10 @@
     line-height: 40px;
   }
 
-  .Text:last-child {
-    margin-top: 0;
+  .Text {
+    &:last-child {
+      margin-top: 0;
+    }
   }
 }
 

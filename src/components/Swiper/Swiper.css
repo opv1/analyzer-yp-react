@@ -1,0 +1,24 @@
+.slick-arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-next:before {
+  font-size: 30px;
+  color: #000;
+}
+
+.slick-prev:before {
+  font-size: 30px;
+  color: #000;
+}
+
+@media screen and (max-width: 1023px) {
+  .slick-next:before {
+    display: none;
+  }
+
+  .slick-prev:before {
+    display: none;
+  }
+}

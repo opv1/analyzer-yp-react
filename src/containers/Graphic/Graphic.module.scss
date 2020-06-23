@@ -37,16 +37,21 @@
 .Date {
   width: 60px;
   margin-right: 40px;
+  color: #b6bcbf;
 }
 
 .Count {
   display: block;
+  color: #b6bcbf;
 }
 
 .Rows {
   display: flex;
   justify-content: space-between;
   margin: 16px 0 0 92px;
+  &:last-child {
+    margin: 0 0 0 92px;
+  }
 }
 
 .Cell {
@@ -57,6 +62,7 @@
   line-height: 16px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
+  color: #b6bcbf;
 }
 
 .Columns {
@@ -74,12 +80,16 @@
   line-height: 24px;
 }
 
-.ColumnY:not(:first-child) {
-  margin-top: 56px;
+.ColumnY {
+  &:not(:first-child) {
+    margin-top: 56px;
+  }
 }
 
-.ColumnY:first-child {
-  margin: 18px 0 0;
+.ColumnY {
+  &:first-child {
+    margin: 18px 0 0;
+  }
 }
 
 .ColumnsX {
@@ -98,10 +108,13 @@
   line-height: 16px;
   letter-spacing: 0.4px;
   background: #2f71e5;
+  color: #fff;
 }
 
-.ColumnX:nth-child(1) {
-  margin-top: 18px;
+.ColumnX {
+  &:nth-child(1) {
+    margin-top: 18px;
+  }
 }
 
 @media screen and (max-width: 1023px) {

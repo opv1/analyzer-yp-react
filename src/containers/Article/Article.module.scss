@@ -1,0 +1,84 @@
+.Article {
+  text-decoration: none;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 400px;
+  height: 576px;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.Image {
+  min-height: 272px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 23px;
+  margin-right: 23px;
+  height: 100%;
+}
+
+.Date {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #b6bcbf;
+}
+
+.Title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  max-height: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: #000000;
+}
+
+.Description {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  max-height: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: #000000;
+}
+
+.Source {
+  margin-bottom: 24px;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #b6bcbf;
+}

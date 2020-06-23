@@ -19,6 +19,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  color: #b6bcbf;
 }
 
 .Navigation {
@@ -34,11 +35,10 @@
 .Item {
   margin: 0;
   list-style-type: none;
-}
-
-.Item:nth-child(2) {
-  margin-left: 50px;
-  margin-right: 50px;
+  &:nth-child(2) {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 
 .Link {
@@ -50,8 +50,10 @@
   text-decoration: none;
 }
 
-.Reference:last-child {
-  margin-left: 27px;
+.Reference {
+  &:last-child {
+    margin-left: 27px;
+  }
 }
 
 .Icon {
@@ -59,9 +61,11 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .Item:nth-child(2) {
-    margin-left: 25px;
-    margin-right: 25px;
+  .Item {
+    &:nth-child(2) {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
   }
 }
 
@@ -102,8 +106,10 @@
     flex-direction: column;
   }
 
-  .Item:nth-child(2) {
-    margin: 0;
+  .Item {
+    &:nth-child(2) {
+      margin: 0;
+    }
   }
 
   .Link {

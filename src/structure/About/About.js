@@ -1,30 +1,15 @@
 import React, { Component } from 'react';
 import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
-import { axiosCommits } from '../../hoc/Axios/Axios';
 import Customer from '../../containers/Customer/Customer';
 import Stack from '../../containers/Stack/Stack';
 import Author from '../../containers/Author/Author';
 import Commits from '../../containers/Commits/Commits';
+import { connect } from 'react-redux';
+import { fetchCommits } from '../../store/actions/actions';
 
 class About extends Component {
-  state = {
-    user: 'opv1',
-    repository: 'yp-graduate-work-react',
-    commits: [],
-  };
-
-  async componentDidMount() {
-    try {
-      const responseCommits = await axiosCommits.get(
-        `/repos/${this.state.user}/${this.state.repository}/commits?`
-      );
-
-      this.setState({
-        commits: responseCommits.data,
-      });
-    } catch (error) {
-      console.log(error);
-    }
+  componentDidMount() {
+    this.props.fetchCommits();
   }
 
   render() {
@@ -33,10 +18,22 @@ class About extends Component {
         <Customer />
         <Stack />
         <Author />
-        <Commits commits={this.state.commits} />
+        <Commits commits={this.props.commits} />
       </Auxiliary>
     );
   }
 }
 
-export default About;
+function mapStateToProps(state) {
+  return {
+    commits: state.about.commits,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    fetchCommits: () => dispatch(fetchCommits()),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(About);

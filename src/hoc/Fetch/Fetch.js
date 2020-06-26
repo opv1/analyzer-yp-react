@@ -8,7 +8,7 @@ const urlApiNews =
 const toDate = formateDateIco(new Date());
 const fromDate = formateDateIco(new Date(formateDateAgo(new Date(), 6)));
 
-const fetchNews = (keyWord) => {
+export const fetchApiNews = (keyWord) => {
   return fetch(
     `${urlApiNews}` +
       `q=${keyWord}&` +
@@ -39,5 +39,3 @@ const fetchNews = (keyWord) => {
       }
     });
 };
-
-export { fetchNews };

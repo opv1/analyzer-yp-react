@@ -3,40 +3,26 @@ import classes from './Layout.module.scss';
 import Header from '../../containers/Header/Header';
 import Main from '../../containers/Main/Main';
 import Footer from '../../containers/Footer/Footer';
+import { connect } from 'react-redux';
+import { setStylesLayout } from '../../store/actions/actions';
 
 class Layout extends Component {
-  state = {
-    type: null,
-  };
-
   componentDidUpdate(prevProps) {
     if (this.props.location.pathname !== prevProps.location.pathname) {
-      if (this.props.location.pathname === '/yp-graduate-work-react/') {
-        this.setState({
-          type: 'withBackground',
-        });
-      } else {
-        this.setState({
-          type: null,
-        });
-      }
+      this.props.setStylesLayout(this.props.location.pathname);
     }
   }
 
   componentDidMount() {
-    if (this.props.location.pathname === '/yp-graduate-work-react/') {
-      this.setState({
-        type: 'withBackground',
-      });
-    }
+    this.props.setStylesLayout(this.props.location.pathname);
   }
 
   render() {
-    const cls = [classes.Layout, classes[this.state.type]];
+    const cls = [classes.Layout, classes[this.props.typeLayout]];
 
     return (
       <div className={cls.join(' ')}>
-        <Header type={this.state.type} />
+        <Header />
         <Main>{this.props.children}</Main>
         <Footer />
       </div>
@@ -44,4 +30,14 @@ class Layout extends Component {
   }
 }
 
-export default Layout;
+function mapStateToProps(state) {
+  return { typeLayout: state.layout.typeLayout };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    setStylesLayout: (pathname) => dispatch(setStylesLayout(pathname)),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Layout);

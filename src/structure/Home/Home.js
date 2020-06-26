@@ -1,106 +1,52 @@
 import React, { Component } from 'react';
 import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
-import { fetchNews } from '../../hoc/Fetch/Fetch';
-import { setDataStorage } from '../../scripts/utils/utils';
 import Search from '../../containers/Search/Search';
 import Error from '../../containers/Error/Error';
 import Result from '../../containers/Result/Result';
 import Author from '../../containers/Author/Author';
 import Loader from '../../components/Loader/Loader';
+import { connect } from 'react-redux';
+import { setInitialNews } from '../../store/actions/actions';
 
 class Home extends Component {
-  state = {
-    loading: false,
-    error: false,
-    typeError: null,
-    result: false,
-    news: {},
-    analytics: {},
-    keyWord: null,
-  };
-
   componentDidMount() {
-    if (localStorage.getItem('newsObject') !== null) {
-      const news = JSON.parse(localStorage.getItem('newsObject'));
-      const analytics = JSON.parse(localStorage.getItem('analyticsObject'));
-      const { keyWord } = analytics;
-
-      return this.setState({
-        result: true,
-        news,
-        analytics,
-        keyWord,
-      });
+    if (
+      JSON.parse(localStorage.getItem('newsObject')) !== null &&
+      JSON.parse(localStorage.getItem('analyticsObject')) !== null
+    ) {
+      return this.props.setInitialNews();
     }
   }
-
-  searchNews = (event) => {
-    event.preventDefault();
-
-    const form = event.target;
-    const input = form.elements.search;
-    const button = form.elements.button;
-    const keyWord = input.value;
-
-    new Promise((resolve) => {
-      input.setAttribute('disabled', true);
-      button.setAttribute('disabled', true);
-
-      this.setState({
-        loading: true,
-        error: false,
-        result: false,
-      });
-      resolve(
-        fetchNews(keyWord)
-          .then((responseNews) => {
-            setDataStorage(responseNews, keyWord);
-
-            this.setState({
-              loading: false,
-              error: false,
-              result: true,
-              news: responseNews,
-            });
-          })
-          .catch((error) => {
-            if (error.message === 'Проблемы на этапе запроса новостей!') {
-              return this.setState({
-                loading: false,
-                error: true,
-                typeError: 'failedToFetch',
-              });
-            }
-
-            if (error.message === 'Ничего не найдено. Нулевой результат!') {
-              return this.setState({
-                loading: false,
-                error: true,
-                typeError: 'failedToFound',
-              });
-            }
-          })
-          .finally(() => {
-            input.removeAttribute('disabled');
-            button.removeAttribute('disabled');
-          })
-      );
-    });
-  };
 
   render() {
     return (
       <Auxiliary>
-        <Search searchNews={this.searchNews} keyWord={this.state.keyWord} />
-        {this.state.loading ? <Loader /> : null}
-        {this.state.error ? <Error typeError={this.state.typeError} /> : null}
-        {this.state.result ? (
-          <Result news={this.state.news} analytics={this.state.analytics} />
-        ) : null}
+        <Search />
+        {this.props.loading ? <Loader /> : null}
+        {this.props.error ? <Error typeError={this.props.typeError} /> : null}
+        {this.props.result ? <Result /> : null}
         <Author />
       </Auxiliary>
     );
   }
 }
 
-export default Home;
+function mapStateToProps(state) {
+  return {
+    loading: state.home.loading,
+    error: state.home.error,
+    typeError: state.home.typeError,
+    result: state.home.result,
+    news: state.home.news,
+    analytics: state.home.analytics,
+    keyWord: state.home.keyWord,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    setInitialNews: () => dispatch(setInitialNews()),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

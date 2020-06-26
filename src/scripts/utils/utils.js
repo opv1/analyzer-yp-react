@@ -1,12 +1,12 @@
-const formateDateAgo = (date, days) => {
+export const formateDateAgo = (date, days) => {
   return date.setDate(date.getDate() - days);
 };
 
-const formateDateIco = (date) => {
+export const formateDateIco = (date) => {
   return date.toISOString().slice(0, 10);
 };
 
-const formateDateLocal = (date, options) => {
+export const formateDateLocal = (date, options) => {
   return date.toLocaleString('ru', options);
 };
 
@@ -63,7 +63,7 @@ const weekObject = (newsObject, regExp, date, amountKeyWord) => {
   return currentWeek;
 };
 
-const setDataStorage = (newsObject, keyWord) => {
+export const setDataStorage = (newsObject, keyWord) => {
   localStorage.setItem('newsObject', JSON.stringify(newsObject));
 
   const regExp = new RegExp(`${keyWord}`, `gi`);
@@ -82,5 +82,3 @@ const setDataStorage = (newsObject, keyWord) => {
 
   localStorage.setItem('analyticsObject', JSON.stringify(analyticsObject));
 };
-
-export { formateDateAgo, formateDateIco, formateDateLocal, setDataStorage };

@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.module.scss';
+import { Switch, Route } from 'react-router-dom';
+import './App.scss';
 import Layout from './structure/Layout/Layout';
 import Home from './structure/Home/Home';
 import About from './structure/About/About';
 import Analytics from './structure/Analytics/Analytics';
-import { Switch, Route } from 'react-router-dom';
 
-const App = () => {
+function App() {
   return (
     <Switch>
       <Layout>
@@ -16,6 +16,6 @@ const App = () => {
       </Layout>
     </Switch>
   );
-};
+}
 
 export default App;

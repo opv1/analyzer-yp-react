@@ -1,12 +1,17 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 import classes from './Result.module.scss';
 import Article from '../Article/Article';
 import Button from '../../components/UI/Button/Button';
-import { NavLink } from 'react-router-dom';
-import { connect } from 'react-redux';
 import { handleClick } from '../../store/actions/actions';
 
-const Result = ({ news, fromVisible, toVisible, analytics, handleClick }) => {
+const Result = () => {
+  const { news, fromVisible, toVisible, analytics } = useSelector(
+    (state) => state.home
+  );
+  const dispatch = useDispatch();
+
   return (
     <section className={classes.Result}>
       <div className={classes.Wrapper}>
@@ -28,7 +33,7 @@ const Result = ({ news, fromVisible, toVisible, analytics, handleClick }) => {
             return <Article key={index + 1}>{article}</Article>;
           })}
         </div>
-        <Button onClick={handleClick} type='ButtonResult'>
+        <Button onClick={() => dispatch(handleClick())} type='ButtonResult'>
           Показать еще
         </Button>
       </div>
@@ -36,19 +41,4 @@ const Result = ({ news, fromVisible, toVisible, analytics, handleClick }) => {
   );
 };
 
-function mapStateToProps(state) {
-  return {
-    news: state.home.news,
-    fromVisible: state.home.fromVisible,
-    toVisible: state.home.toVisible,
-    analytics: state.home.analytics,
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    handleClick: () => dispatch(handleClick()),
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Result);
+export default Result;

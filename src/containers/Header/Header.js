@@ -1,10 +1,12 @@
 import React from 'react';
-import classes from './Header.module.scss';
-import { css } from 'glamor';
 import { Link, NavLink } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { css } from 'glamor';
+import classes from './Header.module.scss';
 
-const Header = ({ color, boxShadow }) => {
+const Header = () => {
+  const { color, boxShadow } = useSelector((state) => state.layout);
+
   const style = {
     NavLink: {
       ':hover': { color },
@@ -62,11 +64,4 @@ const Header = ({ color, boxShadow }) => {
   );
 };
 
-function mapStateToProps(state) {
-  return {
-    color: state.layout.color,
-    boxShadow: state.layout.boxShadow,
-  };
-}
-
-export default connect(mapStateToProps)(Header);
+export default Header;

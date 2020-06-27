@@ -1,39 +1,29 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
 import Customer from '../../containers/Customer/Customer';
 import Stack from '../../containers/Stack/Stack';
 import Author from '../../containers/Author/Author';
 import Commits from '../../containers/Commits/Commits';
-import { connect } from 'react-redux';
 import { fetchCommits } from '../../store/actions/actions';
 
-class About extends Component {
-  componentDidMount() {
-    this.props.fetchCommits();
-  }
+function About() {
+  const { commits } = useSelector((state) => state.about);
+  const dispatch = useDispatch();
 
-  render() {
-    return (
-      <Auxiliary>
-        <Customer />
-        <Stack />
-        <Author />
-        <Commits commits={this.props.commits} />
-      </Auxiliary>
-    );
-  }
+  useEffect(() => {
+    dispatch(fetchCommits());
+    // eslint-disable-next-line
+  }, []);
+
+  return (
+    <Auxiliary>
+      <Customer />
+      <Stack />
+      <Author />
+      <Commits commits={commits} />
+    </Auxiliary>
+  );
 }
 
-function mapStateToProps(state) {
-  return {
-    commits: state.about.commits,
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    fetchCommits: () => dispatch(fetchCommits()),
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(About);
+export default About;

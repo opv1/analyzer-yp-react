@@ -5,16 +5,14 @@ import 'slick-carousel/slick/slick-theme.css';
 import './Swiper.css';
 import Commit from '../../containers/Commit/Commit';
 
-const Swiper = (props) => {
-  const SampleNextArrow = (props) => {
-    const { className, onClick } = props;
+const Swiper = ({ commits }) => {
+  const SampleNextArrow = ({ className, onClick }) => {
     const cls = [className, 'slick-arrow', 'slick-next'];
 
     return <div className={cls.join(' ')} onClick={onClick} />;
   };
 
-  const SamplePrevArrow = (props) => {
-    const { className, onClick } = props;
+  const SamplePrevArrow = ({ className, onClick }) => {
     const cls = [className, 'slick-arrow', 'slick-prev'];
 
     return <div className={cls.join(' ')} onClick={onClick} />;
@@ -47,7 +45,7 @@ const Swiper = (props) => {
 
   return (
     <Slider {...settings}>
-      {props.commits.map((commit, index) => {
+      {commits.map((commit, index) => {
         return <Commit key={index + 1}>{commit}</Commit>;
       })}
     </Slider>

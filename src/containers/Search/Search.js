@@ -1,12 +1,15 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import classes from './Search.module.scss';
 import Form from '../../components/UI/Form/Form';
 import Input from '../../components/UI/Input/Input';
 import Button from '../../components/UI/Button/Button';
-import { connect } from 'react-redux';
 import { fetchNews, handleChange } from '../../store/actions/actions';
 
-const Search = ({ keyWord, fetchNews, handleChange }) => {
+const Search = () => {
+  const { keyWord } = useSelector((state) => state.home);
+  const dispatch = useDispatch();
+
   return (
     <section className={classes.Search}>
       <div className={classes.Wrapper}>
@@ -17,9 +20,9 @@ const Search = ({ keyWord, fetchNews, handleChange }) => {
             в новостях за прошедшую неделю.
           </h2>
         </div>
-        <Form onSubmit={(event) => fetchNews(event)}>
+        <Form onSubmit={(event) => dispatch(fetchNews(event))}>
           <Input
-            onChange={(event) => handleChange(event)}
+            onChange={(event) => dispatch(handleChange(event))}
             value={keyWord}
             name={'input'}
             placeholder={'Введите тему новости'}
@@ -36,15 +39,4 @@ const Search = ({ keyWord, fetchNews, handleChange }) => {
   );
 };
 
-function mapStateToProps(state) {
-  return { keyWord: state.home.keyWord };
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    fetchNews: (event) => dispatch(fetchNews(event)),
-    handleChange: (event) => dispatch(handleChange(event)),
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Search);
+export default Search;

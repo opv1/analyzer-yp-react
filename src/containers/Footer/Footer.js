@@ -1,8 +1,8 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import classes from './Footer.module.scss';
 import logoGitHub from '../../images/github.svg';
 import logoFB from '../../images/fb.svg';
-import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (

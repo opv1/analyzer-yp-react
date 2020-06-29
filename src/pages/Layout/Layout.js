@@ -7,9 +7,9 @@ import Footer from '../../containers/Footer/Footer';
 import { setStylesLayout } from '../../store/actions/actions';
 
 function Layout(props) {
-  const pathname = props.location.pathname;
   const { typeLayout } = useSelector((state) => state.layout);
   const dispatch = useDispatch();
+  const pathname = props.location.pathname;
 
   useEffect(() => {
     dispatch(setStylesLayout(pathname));

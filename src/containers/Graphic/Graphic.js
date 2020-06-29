@@ -2,14 +2,14 @@ import React from 'react';
 import classes from './Graphic.module.scss';
 
 const Graphic = ({ analytics }) => {
-  const { presentMonth, presentWeek } = analytics;
   const columnY = [];
   const columnX = [];
 
-  for (let i = 0; i < presentWeek.length; i += 1) {
+  for (let i = 0; i < analytics.presentWeek.length; i += 1) {
     columnY.push(
       <p className={classes.ColumnY} key={i}>
-        {presentWeek[i].dayNumber},&nbsp;{presentWeek[i].dayName}
+        {analytics.presentWeek[i].dayNumber},&nbsp;
+        {analytics.presentWeek[i].dayName}
       </p>
     );
 
@@ -17,9 +17,9 @@ const Graphic = ({ analytics }) => {
       <p
         className={classes.ColumnX}
         key={i}
-        style={{ width: `${presentWeek[i].widthPercent}%` }}
+        style={{ width: `${analytics.presentWeek[i].widthPercent}%` }}
       >
-        {presentWeek[i].newsCount}
+        {analytics.presentWeek[i].newsCount}
       </p>
     );
   }
@@ -30,7 +30,7 @@ const Graphic = ({ analytics }) => {
         <h3 className={classes.Caption}>Аналитика по дням</h3>
         <div className={classes.Block}>
           <div className={classes.Head}>
-            <p className={classes.Date}>Дата ({presentMonth})</p>
+            <p className={classes.Date}>Дата ({analytics.presentMonth})</p>
             <p className={classes.Count}>Кол-во упоминаний</p>
           </div>
           <div className={classes.Rows}>

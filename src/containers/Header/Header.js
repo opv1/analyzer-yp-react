@@ -7,23 +7,21 @@ import classes from './Header.module.scss';
 const Header = () => {
   const { color, boxShadow } = useSelector((state) => state.layout);
 
-  const style = {
-    NavLink: {
+  const styles = {
+    color,
+    borderBottom: `2px solid ${color}`,
+    boxShadow,
+    hover: {
       ':hover': { color },
     },
   };
 
   return (
-    <header
-      className={classes.Header}
-      style={{
-        boxShadow,
-      }}
-    >
+    <header className={classes.Header} style={{ boxShadow: styles.boxShadow }}>
       <div className={classes.Wrapper}>
         <Link
           className={classes.Caption}
-          style={{ color }}
+          style={{ color: styles.color }}
           to='/yp-graduate-work-react/'
         >
           NewsAnalyzer
@@ -34,10 +32,10 @@ const Header = () => {
               <NavLink
                 exact
                 className={classes.Link}
-                {...css(style.NavLink)}
+                {...css(styles.hover)}
                 activeStyle={{
-                  color,
-                  borderBottom: `2px solid ${color}`,
+                  color: styles.color,
+                  borderBottom: styles.borderBottom,
                 }}
                 to='/yp-graduate-work-react/'
               >
@@ -47,10 +45,10 @@ const Header = () => {
             <li className={classes.Item}>
               <NavLink
                 className={classes.Link}
-                {...css(style.NavLink)}
+                {...css(styles.hover)}
                 activeStyle={{
-                  color,
-                  borderBottom: `2px solid ${color}`,
+                  color: styles.color,
+                  borderBottom: styles.borderBottom,
                 }}
                 to='/yp-graduate-work-react/about'
               >

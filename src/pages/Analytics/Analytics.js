@@ -1,5 +1,5 @@
 import React from 'react';
-import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
+import Auxiliary from '../../scripts/Auxiliary/Auxiliary';
 import Navigation from '../../containers/Navigation/Navigation';
 import Coincide from '../../containers/Coincide/Coincide';
 import Graphic from '../../containers/Graphic/Graphic';

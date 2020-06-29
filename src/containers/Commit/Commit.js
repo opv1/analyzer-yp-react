@@ -3,9 +3,7 @@ import classes from './Commit.module.scss';
 import { formateDateLocal } from '../../scripts/utils/utils';
 
 const Commit = ({ children }) => {
-  const { author, message } = children.commit;
-  const { avatar_url } = children.committer;
-  const date = formateDateLocal(new Date(author.date), {
+  const date = formateDateLocal(new Date(children.commit.author.date), {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
@@ -17,14 +15,14 @@ const Commit = ({ children }) => {
       <div className={classes.Author}>
         <div
           className={classes.Avatar}
-          style={{ backgroundImage: `url(${avatar_url})` }}
+          style={{ backgroundImage: `url(${children.committer.avatar_url})` }}
         ></div>
         <div className={classes.Info}>
-          <p className={classes.Name}>{author.name}</p>
-          <p className={classes.Email}>{author.email}</p>
+          <p className={classes.Name}>{children.commit.author.name}</p>
+          <p className={classes.Email}>{children.commit.author.email}</p>
         </div>
       </div>
-      <p className={classes.Description}>{message}</p>
+      <p className={classes.Description}>{children.commit.message}</p>
     </div>
   );
 };

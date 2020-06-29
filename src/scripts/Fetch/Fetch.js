@@ -1,4 +1,4 @@
-import { formateDateAgo, formateDateIco } from '../../scripts/utils/utils';
+import { formateDateAgo, formateDateIco } from '../utils/utils';
 
 const urlApiNews =
   process.env.NODE_ENV === 'development'

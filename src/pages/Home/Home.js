@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Auxiliary from '../../hoc/Auxiliary/Auxiliary';
+import Auxiliary from '../../scripts/Auxiliary/Auxiliary';
 import Search from '../../containers/Search/Search';
 import Error from '../../containers/Error/Error';
 import Result from '../../containers/Result/Result';

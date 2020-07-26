@@ -1,5 +1,5 @@
-import { fetchApiNews } from '../../scripts/Fetch/Fetch';
-import { axiosApiCommits } from '../../scripts/Axios/Axios';
+import { fetchApiNews } from '../../scripts/fetch/fetch';
+import { axiosApiCommits } from '../../scripts/axios/axios';
 import { setDataStorage } from '../../scripts/utils/utils';
 import {
   STYLES_LAYOUT,

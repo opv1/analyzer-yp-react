@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "198e7d13cb835cf52bf46c955a9147c5",
+    "revision": "528ac34068afe1d1533dbbb3bbbeea39",
     "url": "/yp-graduate-work-react/index.html"
   },
   {
-    "revision": "19374e9ba6c7bf1e5720",
+    "revision": "d771ca522ae77b52a021",
     "url": "/yp-graduate-work-react/static/css/2.b75ed488.chunk.css"
   },
   {
-    "revision": "a5c0b6c7b1d1e1d41cb7",
-    "url": "/yp-graduate-work-react/static/css/main.6c48f80f.chunk.css"
+    "revision": "8e05b730d4357b720184",
+    "url": "/yp-graduate-work-react/static/css/main.9fa0a970.chunk.css"
   },
   {
-    "revision": "19374e9ba6c7bf1e5720",
-    "url": "/yp-graduate-work-react/static/js/2.9a9da1bd.chunk.js"
+    "revision": "d771ca522ae77b52a021",
+    "url": "/yp-graduate-work-react/static/js/2.4b84999a.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/yp-graduate-work-react/static/js/2.9a9da1bd.chunk.js.LICENSE.txt"
+    "url": "/yp-graduate-work-react/static/js/2.4b84999a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a5c0b6c7b1d1e1d41cb7",
-    "url": "/yp-graduate-work-react/static/js/main.3ca6a614.chunk.js"
+    "revision": "8e05b730d4357b720184",
+    "url": "/yp-graduate-work-react/static/js/main.43e98b3b.chunk.js"
   },
   {
     "revision": "d1e45e7125d891358d23",

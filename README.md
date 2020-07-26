@@ -12,7 +12,7 @@
 ## Настройка проекта
 
 ```
-npm run dev
+npm run start
 ```
 
 ```

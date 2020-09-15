@@ -2,8 +2,8 @@ import { formateDateAgo, formateDateIco } from '../utils/utils';
 
 const urlApiNews =
   process.env.NODE_ENV === 'development'
-    ? 'http://praktikum.tk/news/v2/everything?'
-    : 'https://praktikum.tk/news/v2/everything?';
+    ? 'http://nomoreparties.co/news/v2/everything?'
+    : 'https://nomoreparties.co/news/v2/everything?';
 
 const toDate = formateDateIco(new Date());
 const fromDate = formateDateIco(new Date(formateDateAgo(new Date(), 6)));

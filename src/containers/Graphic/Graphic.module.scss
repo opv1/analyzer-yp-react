@@ -14,7 +14,7 @@
   margin: 0;
   margin-bottom: 50px;
   font-family: 'Roboto Slab', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 26px;
   line-height: 30px;
 }
@@ -25,18 +25,18 @@
 
 .Head {
   display: flex;
+  border-bottom: 1px solid #1a1b22;
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  border-bottom: 1px solid #1a1b22;
 }
 
 .Date {
-  width: 60px;
   margin-right: 40px;
+  width: 60px;
   color: #b6bcbf;
 }
 
@@ -49,6 +49,7 @@
   display: flex;
   justify-content: space-between;
   margin: 16px 0 0 92px;
+
   &:last-child {
     margin: 0 0 0 92px;
   }
@@ -57,7 +58,7 @@
 .Cell {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.4px;
@@ -75,7 +76,7 @@
 
 .ColumnY {
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
@@ -107,8 +108,8 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.4px;
-  background: #2f71e5;
   color: #fff;
+  background: #2f71e5;
 }
 
 .ColumnX {

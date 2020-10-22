@@ -7,8 +7,8 @@
 .Wrapper {
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 87%;
 }
@@ -16,7 +16,7 @@
 .Copyright {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #b6bcbf;
@@ -33,21 +33,22 @@
 }
 
 .Item {
-  margin: 0;
   list-style-type: none;
+  margin: 0;
+
   &:nth-child(2) {
-    margin-left: 50px;
     margin-right: 50px;
+    margin-left: 50px;
   }
 }
 
 .Link {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #000;
   text-decoration: none;
+  color: #000;
 }
 
 .Reference {
@@ -63,8 +64,8 @@
 @media screen and (max-width: 1023px) {
   .Item {
     &:nth-child(2) {
-      margin-left: 25px;
       margin-right: 25px;
+      margin-left: 25px;
     }
   }
 }
@@ -80,8 +81,8 @@
 
   .Copyright {
     position: absolute;
-    bottom: 0;
     left: 0;
+    bottom: 0;
   }
 
   .Navigation {
@@ -90,8 +91,8 @@
 
   .Social {
     position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
   }
 }
 

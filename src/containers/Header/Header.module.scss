@@ -6,15 +6,15 @@
 
 .Wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 87%;
 }
 
 .Caption {
   font-family: 'Roboto Slab', sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;
@@ -31,10 +31,11 @@
 }
 
 .Item {
-  margin-right: 34px;
   list-style-type: none;
+  margin-right: 34px;
+
   &:last-child {
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 

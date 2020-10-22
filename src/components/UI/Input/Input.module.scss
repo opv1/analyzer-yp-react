@@ -1,22 +1,22 @@
 .Input {
   margin: 0 auto;
-  min-width: 548px;
-  min-height: 64px;
-  padding: 20px 25px;
+  outline: none;
   border: 1px solid #d1d2d6;
   border-radius: 100px;
-  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  padding: 20px 25px;
+  min-width: 548px;
+  min-height: 64px;
+  box-shadow: 0 5px 15px rgba(14, 26, 57, 0.2);
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  outline: none;
   backdrop-filter: blur(8px);
 }
 
 .Input:hover {
-  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.5);
+  box-shadow: 0 5px 15px rgba(14, 26, 57, 0.5);
   transition: box-shadow 1s ease;
 }
 

@@ -25,21 +25,21 @@
 .Caption {
   margin: 0 auto;
   margin-bottom: 16px;
-  text-align: center;
   font-family: 'Roboto Slab', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 26px;
   line-height: 30px;
+  text-align: center;
 }
 
 .Text {
   margin: 0 auto;
   max-width: 356px;
-  text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1023px) {

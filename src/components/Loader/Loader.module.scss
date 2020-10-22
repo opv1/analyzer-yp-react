@@ -1,14 +1,15 @@
 @keyframes Loading {
   0% {
-    top: 36px;
     left: 36px;
+    top: 36px;
     width: 0;
     height: 0;
     opacity: 1;
   }
+
   100% {
-    top: 0px;
-    left: 0px;
+    left: 0;
+    top: 0;
     width: 72px;
     height: 72px;
     opacity: 0;
@@ -30,16 +31,16 @@
 .Caption {
   margin: 0 auto;
   margin-bottom: 16px;
-  text-align: center;
   font-family: 'Roboto Slab', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 26px;
   line-height: 30px;
+  text-align: center;
 }
 
 .Loading {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   width: 80px;
   height: 80px;
 }
@@ -47,8 +48,8 @@
 .Loading div {
   position: absolute;
   border: 4px solid #000;
-  opacity: 1;
   border-radius: 50%;
+  opacity: 1;
   animation: Loading 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 

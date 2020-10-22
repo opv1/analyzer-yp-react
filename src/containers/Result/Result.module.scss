@@ -15,8 +15,8 @@
 
 .Block {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 64px;
   width: 100%;
 }
@@ -24,7 +24,7 @@
 .Caption {
   margin: 0;
   font-family: 'Roboto Slab', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 40px;
   line-height: 46px;
 }
@@ -44,10 +44,9 @@
 
 .Container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
+  grid-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
   width: 100%;
 }
@@ -72,8 +71,8 @@
   }
 
   .Container {
-    grid-template-columns: none;
     grid-row-gap: 8px;
+    grid-template-columns: none;
   }
 }
 

@@ -7,8 +7,8 @@
 
 .Wrapper {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 87%;
 }
@@ -17,7 +17,7 @@
   margin: 0;
   max-width: 344px;
   font-family: 'Roboto Slab', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 40px;
   line-height: 46px;
 }
@@ -51,9 +51,11 @@
 
   .Icon {
     margin: 0 29px;
+
     &:first-child {
       margin-left: 0;
     }
+
     &:last-child {
       margin-right: 0;
     }
@@ -71,9 +73,11 @@
 
   .Icon {
     margin: 10px;
+
     &:first-child {
       margin-left: 10px;
     }
+
     &:last-child {
       margin-right: 10px;
     }

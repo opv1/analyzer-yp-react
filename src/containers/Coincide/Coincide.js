@@ -1,5 +1,5 @@
-import React from 'react';
-import classes from './Coincide.module.scss';
+import React from 'react'
+import classes from './Coincide.module.scss'
 
 const Coincide = ({ analytics }) => {
   return (
@@ -18,7 +18,7 @@ const Coincide = ({ analytics }) => {
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Coincide;
+export default Coincide

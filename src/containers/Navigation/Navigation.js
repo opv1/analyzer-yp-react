@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import classes from './Navigation.module.scss';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import classes from './Navigation.module.scss'
 
 const Navigation = () => {
   return (
@@ -12,7 +12,7 @@ const Navigation = () => {
         <p className={classes.Link}>/&nbsp;Аналитика</p>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation

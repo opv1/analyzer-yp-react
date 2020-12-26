@@ -1,5 +1,5 @@
-import React from 'react';
-import classes from './Customer.module.scss';
+import React from 'react'
+import classes from './Customer.module.scss'
 
 const Customer = () => {
   return (
@@ -37,7 +37,7 @@ const Customer = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Customer;
+export default Customer

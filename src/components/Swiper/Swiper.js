@@ -1,22 +1,22 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import './Swiper.css';
-import Commit from '../../containers/Commit/Commit';
+import React from 'react'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import './Swiper.css'
+import Commit from '../../containers/Commit/Commit'
 
 const Swiper = ({ commits }) => {
   const SampleNextArrow = ({ className, onClick }) => {
-    const cls = [className, 'slick-arrow', 'slick-next'];
+    const cls = [className, 'slick-arrow', 'slick-next']
 
-    return <div className={cls.join(' ')} onClick={onClick} />;
-  };
+    return <div className={cls.join(' ')} onClick={onClick} />
+  }
 
   const SamplePrevArrow = ({ className, onClick }) => {
-    const cls = [className, 'slick-arrow', 'slick-prev'];
+    const cls = [className, 'slick-arrow', 'slick-prev']
 
-    return <div className={cls.join(' ')} onClick={onClick} />;
-  };
+    return <div className={cls.join(' ')} onClick={onClick} />
+  }
 
   const settings = {
     initialSlide: 0,
@@ -41,15 +41,15 @@ const Swiper = ({ commits }) => {
     ],
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-  };
+  }
 
   return (
     <Slider {...settings}>
       {commits.map((commit, index) => {
-        return <Commit key={index + 1}>{commit}</Commit>;
+        return <Commit key={index + 1}>{commit}</Commit>
       })}
     </Slider>
-  );
-};
+  )
+}
 
-export default Swiper;
+export default Swiper

@@ -1,14 +1,14 @@
-import React from 'react';
-import classes from './Article.module.scss';
-import { formateDateLocal } from '../../scripts/utils/utils';
+import React from 'react'
+import classes from './Article.module.scss'
+import { formateDateLocal } from '../../scripts/utils/utils'
 
 const Article = ({ children }) => {
-  const noImage = 'https://goo.su/1ige';
+  const noImage = 'https://goo.su/1ige'
   const date = formateDateLocal(new Date(children.publishedAt), {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-  });
+  })
 
   return (
     <a
@@ -32,7 +32,7 @@ const Article = ({ children }) => {
         </div>
       </div>
     </a>
-  );
-};
+  )
+}
 
-export default Article;
+export default Article

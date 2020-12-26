@@ -1,12 +1,12 @@
-import { formateDateAgo, formateDateIco } from '../utils/utils';
+import { formateDateAgo, formateDateIco } from '../utils/utils'
 
 const urlApiNews =
   process.env.NODE_ENV === 'development'
     ? 'http://nomoreparties.co/news/v2/everything?'
-    : 'https://nomoreparties.co/news/v2/everything?';
+    : 'https://nomoreparties.co/news/v2/everything?'
 
-const toDate = formateDateIco(new Date());
-const fromDate = formateDateIco(new Date(formateDateAgo(new Date(), 6)));
+const toDate = formateDateIco(new Date())
+const fromDate = formateDateIco(new Date(formateDateAgo(new Date(), 6)))
 
 export const fetchApiNews = (keyWord) => {
   return fetch(
@@ -24,18 +24,18 @@ export const fetchApiNews = (keyWord) => {
     )
     .then((res) => {
       if (res.totalResults === 0) {
-        throw new Error('Failed to found');
+        throw new Error('Failed to found')
       } else {
-        return res;
+        return res
       }
     })
     .catch((error) => {
       if (error.message === 'Failed to fetch') {
-        throw new Error('Проблемы на этапе запроса новостей!');
+        throw new Error('Проблемы на этапе запроса новостей!')
       }
 
       if (error.message === 'Failed to found') {
-        throw new Error('Ничего не найдено. Нулевой результат!');
+        throw new Error('Ничего не найдено. Нулевой результат!')
       }
-    });
-};
+    })
+}

@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import Auxiliary from '../../scripts/Auxiliary/Auxiliary';
-import Customer from '../../containers/Customer/Customer';
-import Stack from '../../containers/Stack/Stack';
-import Author from '../../containers/Author/Author';
-import Commits from '../../containers/Commits/Commits';
-import { fetchCommits } from '../../store/actions/actions';
+import React, { useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import Auxiliary from '../../scripts/Auxiliary/Auxiliary'
+import Customer from '../../containers/Customer/Customer'
+import Stack from '../../containers/Stack/Stack'
+import Author from '../../containers/Author/Author'
+import Commits from '../../containers/Commits/Commits'
+import { fetchCommits } from '../../store/actions/actions'
 
 function About() {
-  const { commits } = useSelector((state) => state.about);
-  const dispatch = useDispatch();
+  const { commits } = useSelector((state) => state.about)
+  const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(fetchCommits());
+    dispatch(fetchCommits())
     // eslint-disable-next-line
-  }, []);
+  }, [])
 
   return (
     <Auxiliary>
@@ -23,7 +23,7 @@ function About() {
       <Author />
       <Commits commits={commits} />
     </Auxiliary>
-  );
+  )
 }
 
-export default About;
+export default About

@@ -9,7 +9,7 @@ import {
   FETCH_COMMITS_SUCCESS,
   FETCH_COMMITS_ERROR,
   INPUT_CHANGE,
-} from '../actions/actionType';
+} from '../actions/actionType'
 
 const initialState = {
   typeLayout: null,
@@ -26,7 +26,7 @@ const initialState = {
   analytics: {},
   keyWord: '',
   commits: [],
-};
+}
 
 export function layoutReducer(state = initialState, action) {
   switch (action.type) {
@@ -36,9 +36,9 @@ export function layoutReducer(state = initialState, action) {
         typeLayout: action.typeLayout,
         color: action.color,
         boxShadow: action.boxShadow,
-      };
+      }
     default:
-      return state;
+      return state
   }
 }
 
@@ -51,9 +51,9 @@ export function homeReducer(state = initialState, action) {
         news: action.news,
         analytics: action.analytics,
         keyWord: action.keyWord,
-      };
+      }
     case FETCH_NEWS_START:
-      return { ...state, loading: true, error: false, result: false };
+      return { ...state, loading: true, error: false, result: false }
     case FETCH_NEWS_SUCCESS:
       return {
         ...state,
@@ -61,38 +61,38 @@ export function homeReducer(state = initialState, action) {
         error: false,
         result: true,
         news: action.news,
-      };
+      }
     case FETCH_NEWS_ERROR:
       return {
         ...state,
         loading: false,
         error: true,
         typeError: action.typeError,
-      };
+      }
     case MORE_NEWS:
       return {
         ...state,
         toVisible: state.toVisible + state.plusVisible,
-      };
+      }
     case INPUT_CHANGE:
       return {
         ...state,
         keyWord: action.keyWord,
-      };
+      }
     default:
-      return state;
+      return state
   }
 }
 
 export function aboutReducer(state = initialState, action) {
   switch (action.type) {
     case FETCH_COMMITS_START:
-      return { ...state, loading: true };
+      return { ...state, loading: true }
     case FETCH_COMMITS_SUCCESS:
-      return { ...state, commits: action.commits };
+      return { ...state, commits: action.commits }
     case FETCH_COMMITS_ERROR:
-      return { ...state, error: action.error };
+      return { ...state, error: action.error }
     default:
-      return state;
+      return state
   }
 }

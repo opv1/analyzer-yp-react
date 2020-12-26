@@ -1,6 +1,6 @@
-import React from 'react';
-import classes from './Commits.module.scss';
-import Swiper from '../../components/Swiper/Swiper';
+import React from 'react'
+import classes from './Commits.module.scss'
+import Swiper from '../../components/Swiper/Swiper'
 
 const Commits = ({ commits }) => {
   return (
@@ -22,7 +22,7 @@ const Commits = ({ commits }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Commits;
+export default Commits

@@ -1,9 +1,9 @@
-import React from 'react';
-import classes from './Stack.module.scss';
-import logoHTML from '../../images/html.svg';
-import logoCSS from '../../images/css.svg';
-import logoJS from '../../images/js.svg';
-import logoWebpack from '../../images/webpack.svg';
+import React from 'react'
+import classes from './Stack.module.scss'
+import logoHTML from '../../images/html.svg'
+import logoCSS from '../../images/css.svg'
+import logoJS from '../../images/js.svg'
+import logoWebpack from '../../images/webpack.svg'
 
 const Stack = () => {
   return (
@@ -18,7 +18,7 @@ const Stack = () => {
         </picture>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Stack;
+export default Stack

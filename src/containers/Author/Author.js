@@ -1,5 +1,5 @@
-import React from 'react';
-import classes from './Author.module.scss';
+import React from 'react'
+import classes from './Author.module.scss'
 
 const Author = () => {
   return (
@@ -24,7 +24,7 @@ const Author = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Author;
+export default Author

@@ -1,6 +1,6 @@
-import React from 'react';
-import classes from './Error.module.scss';
-import logoNotFound from '../../images/not-found.svg';
+import React from 'react'
+import classes from './Error.module.scss'
+import logoNotFound from '../../images/not-found.svg'
 
 const Error = ({ typeError }) => {
   return (
@@ -29,7 +29,7 @@ const Error = ({ typeError }) => {
         </div>
       ) : null}
     </section>
-  );
-};
+  )
+}
 
-export default Error;
+export default Error

@@ -1,5 +1,5 @@
-import React from 'react';
-import classes from './Input.module.scss';
+import React from 'react'
+import classes from './Input.module.scss'
 
 const Input = ({
   onChange,
@@ -12,7 +12,7 @@ const Input = ({
   minLength,
   maxLength,
 }) => {
-  const cls = [classes.Input, classes[type]];
+  const cls = [classes.Input, classes[type]]
 
   return (
     <input
@@ -28,7 +28,7 @@ const Input = ({
       maxLength={maxLength}
       required
     ></input>
-  );
-};
+  )
+}
 
-export default Input;
+export default Input

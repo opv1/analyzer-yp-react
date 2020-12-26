@@ -1,8 +1,8 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import classes from './Footer.module.scss';
-import logoGitHub from '../../images/github.svg';
-import logoFB from '../../images/fb.svg';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import classes from './Footer.module.scss'
+import logoGitHub from '../../images/github.svg'
+import logoFB from '../../images/fb.svg'
 
 const Footer = () => {
   return (
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

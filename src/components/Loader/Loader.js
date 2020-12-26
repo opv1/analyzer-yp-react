@@ -1,5 +1,5 @@
-import React from 'react';
-import classes from './Loader.module.scss';
+import React from 'react'
+import classes from './Loader.module.scss'
 
 const Loader = () => {
   return (
@@ -10,7 +10,7 @@ const Loader = () => {
       </div>
       <h3 className={classes.Caption}>Идет поиск новостей...</h3>
     </div>
-  );
-};
+  )
+}
 
-export default Loader;
+export default Loader

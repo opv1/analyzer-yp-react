@@ -1,13 +1,13 @@
-import React from 'react';
-import classes from './Commit.module.scss';
-import { formateDateLocal } from '../../scripts/utils/utils';
+import React from 'react'
+import classes from './Commit.module.scss'
+import { formateDateLocal } from '../../scripts/utils/utils'
 
 const Commit = ({ children }) => {
   const date = formateDateLocal(new Date(children.commit.author.date), {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-  });
+  })
 
   return (
     <div className={classes.Commit}>
@@ -24,7 +24,7 @@ const Commit = ({ children }) => {
       </div>
       <p className={classes.Description}>{children.commit.message}</p>
     </div>
-  );
-};
+  )
+}
 
-export default Commit;
+export default Commit

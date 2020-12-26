@@ -1,9 +1,9 @@
-import React from 'react';
-import classes from './Graphic.module.scss';
+import React from 'react'
+import classes from './Graphic.module.scss'
 
 const Graphic = ({ analytics }) => {
-  const columnY = [];
-  const columnX = [];
+  const columnY = []
+  const columnX = []
 
   for (let i = 0; i < analytics.presentWeek.length; i += 1) {
     columnY.push(
@@ -11,7 +11,7 @@ const Graphic = ({ analytics }) => {
         {analytics.presentWeek[i].dayNumber},&nbsp;
         {analytics.presentWeek[i].dayName}
       </p>
-    );
+    )
 
     columnX.push(
       <p
@@ -21,7 +21,7 @@ const Graphic = ({ analytics }) => {
       >
         {analytics.presentWeek[i].newsCount}
       </p>
-    );
+    )
   }
 
   return (
@@ -54,7 +54,7 @@ const Graphic = ({ analytics }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Graphic;
+export default Graphic

@@ -3,15 +3,13 @@
   <img src="https://img.shields.io/badge/made%20by-opv1-blue.svg">
 </p>
 
-## Описание
+## Description
 
-Это сервис для анализа происходящих в мире событий. Его задача — установить, насколько популярны новости на определенную тему
+Stack: React
 
-Стек: HTML, CSS, Scss, React
+## [See the project](https://opv1.github.io/analyzer-yp-react/)
 
-## [Увидеть проект](https://opv1.github.io/analyzer-app-yp-react/)
-
-## Настройка проекта
+## Setup
 
 ```
 npm run build

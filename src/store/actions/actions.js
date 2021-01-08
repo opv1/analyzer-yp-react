@@ -16,7 +16,7 @@ import {
 
 export function setStylesLayout(pathname) {
   return (dispatch) => {
-    if (pathname === '/analyzer-app-yp-react/') {
+    if (pathname === '/analyzer-yp-react/') {
       dispatch(
         stylesLayout(
           'withBackground',
@@ -111,7 +111,7 @@ export function fetchCommits() {
 
     try {
       const responseCommits = await axiosApiCommits.get(
-        `/repos/opv1/analyzer-app-yp-react/commits?`
+        `/repos/opv1/analyzer-yp-react/commits?`
       )
 
       dispatch(fetchCommitsSuccess(responseCommits.data))

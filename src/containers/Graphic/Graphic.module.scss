@@ -79,15 +79,11 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-}
 
-.ColumnY {
   &:not(:first-child) {
     margin-top: 56px;
   }
-}
 
-.ColumnY {
   &:first-child {
     margin: 18px 0 0;
   }
@@ -95,6 +91,10 @@
 
 .ColumnsX {
   width: 100%;
+
+  &:nth-child(1) {
+    margin-top: 18px;
+  }
 }
 
 .ColumnX {
@@ -110,12 +110,6 @@
   letter-spacing: 0.4px;
   color: #fff;
   background: #2f71e5;
-}
-
-.ColumnX {
-  &:nth-child(1) {
-    margin-top: 18px;
-  }
 }
 
 @media screen and (max-width: 1023px) {

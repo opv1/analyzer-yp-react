@@ -1,6 +1,7 @@
 import { fetchApiNews } from '../../scripts/fetch/fetch'
 import { axiosApiCommits } from '../../scripts/axios/axios'
 import { setDataStorage } from '../../scripts/utils/utils'
+import { BASE_URL } from '../../constants'
 import {
   STYLES_LAYOUT,
   INITIAL_NEWS,
@@ -16,7 +17,7 @@ import {
 
 export function setStylesLayout(pathname) {
   return (dispatch) => {
-    if (pathname === '/') {
+    if (pathname === `${BASE_URL}`) {
       dispatch(
         stylesLayout(
           'withBackground',

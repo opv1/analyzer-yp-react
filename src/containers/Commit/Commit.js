@@ -1,6 +1,6 @@
 import React from 'react'
-import classes from './Commit.module.scss'
 import { formateDateLocal } from '../../scripts/utils/utils'
+import classes from './Commit.module.scss'
 
 const Commit = ({ children }) => {
   const date = formateDateLocal(new Date(children.commit.author.date), {

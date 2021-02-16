@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { css } from 'glamor'
+import { BASE_URL } from '../../constants'
 import classes from './Header.module.scss'
 
 const Header = () => {
@@ -22,7 +23,7 @@ const Header = () => {
         <Link
           className={classes.Caption}
           style={{ color: styles.color }}
-          to='/'
+          to={`${BASE_URL}`}
         >
           NewsAnalyzer
         </Link>
@@ -37,7 +38,7 @@ const Header = () => {
                   color: styles.color,
                   borderBottom: styles.borderBottom,
                 }}
-                to='/'
+                to={`${BASE_URL}`}
               >
                 Главная
               </NavLink>
@@ -50,7 +51,7 @@ const Header = () => {
                   color: styles.color,
                   borderBottom: styles.borderBottom,
                 }}
-                to='/about'
+                to={`${BASE_URL}about`}
               >
                 О проекте
               </NavLink>

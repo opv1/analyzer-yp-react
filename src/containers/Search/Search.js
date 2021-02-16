@@ -1,10 +1,10 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import classes from './Search.module.scss'
 import Form from '../../components/UI/Form/Form'
 import Input from '../../components/UI/Input/Input'
 import Button from '../../components/UI/Button/Button'
 import { fetchNews, handleChange } from '../../store/actions/actions'
+import classes from './Search.module.scss'
 
 const Search = () => {
   const { keyWord } = useSelector((state) => state.home)

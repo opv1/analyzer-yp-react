@@ -1,6 +1,6 @@
 import React from 'react'
-import classes from './Article.module.scss'
 import { formateDateLocal } from '../../scripts/utils/utils'
+import classes from './Article.module.scss'
 
 const Article = ({ children }) => {
   const noImage = 'https://goo.su/1ige'

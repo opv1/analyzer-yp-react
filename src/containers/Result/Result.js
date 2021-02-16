@@ -1,10 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import classes from './Result.module.scss'
 import Article from '../Article/Article'
 import Button from '../../components/UI/Button/Button'
 import { handleClick } from '../../store/actions/actions'
+import { BASE_URL } from '../../constants'
+import classes from './Result.module.scss'
 
 const Result = () => {
   const { news, fromVisible, toVisible, analytics } = useSelector(
@@ -20,7 +21,7 @@ const Result = () => {
           <NavLink
             className={classes.Link}
             to={{
-              pathname: '/analytics',
+              pathname: `${BASE_URL}analytics`,
               analytics: analytics,
             }}
           >

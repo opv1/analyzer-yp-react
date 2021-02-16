@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import classes from './Layout.module.scss'
 import Header from '../../containers/Header/Header'
 import Main from '../../containers/Main/Main'
 import Footer from '../../containers/Footer/Footer'
 import { setStylesLayout } from '../../store/actions/actions'
+import classes from './Layout.module.scss'
 
 function Layout(props) {
   const { typeLayout } = useSelector((state) => state.layout)

@@ -1,8 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import classes from './Footer.module.scss'
 import logoGitHub from '../../assets/images/github.svg'
 import logoFB from '../../assets/images/fb.svg'
+import { BASE_URL } from '../../constants'
+import classes from './Footer.module.scss'
 
 const Footer = () => {
   return (
@@ -12,12 +13,12 @@ const Footer = () => {
         <nav className={classes.Navigation}>
           <ul className={classes.List}>
             <li className={classes.Item}>
-              <NavLink className={classes.Link} to='/'>
+              <NavLink className={classes.Link} to={`${BASE_URL}`}>
                 Главная
               </NavLink>
             </li>
             <li className={classes.Item}>
-              <NavLink className={classes.Link} to='/about'>
+              <NavLink className={classes.Link} to={`${BASE_URL}about`}>
                 О проекте
               </NavLink>
             </li>

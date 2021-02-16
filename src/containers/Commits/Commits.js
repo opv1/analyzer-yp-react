@@ -1,6 +1,6 @@
 import React from 'react'
-import classes from './Commits.module.scss'
 import Swiper from '../../components/Swiper/Swiper'
+import classes from './Commits.module.scss'
 
 const Commits = ({ commits }) => {
   return (
@@ -10,7 +10,7 @@ const Commits = ({ commits }) => {
           <h2 className={classes.Caption}>История коммитов из GitHub</h2>
           <a
             className={classes.Analytics}
-            href='https://github.com/opv1/analyzer-yp-react/commits/master'
+            href='https://github.com/opv1/analyzer-react/commits/master'
             target='_blank'
             rel='noopener noreferrer'
           >

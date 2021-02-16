@@ -10,9 +10,9 @@ function App() {
   return (
     <Switch>
       <Layout>
-        <Route exact path='/analyzer-yp-react/' component={Home} />
-        <Route path='/analyzer-yp-react/about' component={About} />
-        <Route path='/analyzer-yp-react/analytics' component={Analytics} />
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/analytics' component={Analytics} />
       </Layout>
     </Switch>
   )

@@ -20,7 +20,7 @@ const Result = () => {
           <NavLink
             className={classes.Link}
             to={{
-              pathname: '/analyzer-yp-react/analytics',
+              pathname: '/analytics',
               analytics: analytics,
             }}
           >

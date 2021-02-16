@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './Stack.module.scss'
-import logoHTML from '../../images/html.svg'
-import logoCSS from '../../images/css.svg'
-import logoJS from '../../images/js.svg'
-import logoWebpack from '../../images/webpack.svg'
+import logoHTML from '../../assets/images/html.svg'
+import logoCSS from '../../assets/images/css.svg'
+import logoJS from '../../assets/images/js.svg'
+import logoWebpack from '../../assets/images/webpack.svg'
 
 const Stack = () => {
   return (

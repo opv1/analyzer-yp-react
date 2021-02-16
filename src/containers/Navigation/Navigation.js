@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <nav className={classes.Navigation}>
       <div className={classes.Wrapper}>
-        <Link className={classes.Link} to='/analyzer-yp-react/'>
+        <Link className={classes.Link} to='/'>
           Главная&nbsp;
         </Link>
         <p className={classes.Link}>/&nbsp;Аналитика</p>

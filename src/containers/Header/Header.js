@@ -22,7 +22,7 @@ const Header = () => {
         <Link
           className={classes.Caption}
           style={{ color: styles.color }}
-          to='/analyzer-yp-react/'
+          to='/'
         >
           NewsAnalyzer
         </Link>
@@ -37,7 +37,7 @@ const Header = () => {
                   color: styles.color,
                   borderBottom: styles.borderBottom,
                 }}
-                to='/analyzer-yp-react/'
+                to='/'
               >
                 Главная
               </NavLink>
@@ -50,7 +50,7 @@ const Header = () => {
                   color: styles.color,
                   borderBottom: styles.borderBottom,
                 }}
-                to='/analyzer-yp-react/about'
+                to='/about'
               >
                 О проекте
               </NavLink>

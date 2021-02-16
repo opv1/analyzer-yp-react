@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './Error.module.scss'
-import logoNotFound from '../../images/not-found.svg'
+import logoNotFound from '../../assets/images/not-found.svg'
 
 const Error = ({ typeError }) => {
   return (

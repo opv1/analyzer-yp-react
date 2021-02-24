@@ -1,9 +1,9 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import Form from '../../components/UI/Form/Form'
-import Input from '../../components/UI/Input/Input'
-import Button from '../../components/UI/Button/Button'
 import { fetchNews, handleChange } from '../../store/actions/actions'
+import Form from '../UI/Form/Form'
+import Input from '../UI/Input/Input'
+import Button from '../UI/Button/Button'
 import classes from './Search.module.scss'
 
 const Search = () => {

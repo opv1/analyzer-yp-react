@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import Auxiliary from '../../scripts/Auxiliary/Auxiliary'
-import Search from '../../containers/Search/Search'
-import Error from '../../containers/Error/Error'
-import Result from '../../containers/Result/Result'
-import Author from '../../containers/Author/Author'
-import Loader from '../../components/Loader/Loader'
 import { setInitialNews } from '../../store/actions/actions'
+import Auxiliary from '../../scripts/Auxiliary/Auxiliary'
+import Search from '../../components/Search/Search'
+import Error from '../../components/Error/Error'
+import Result from '../../components/Result/Result'
+import Author from '../../components/Author/Author'
+import Loader from '../../components/Loader/Loader'
 
 function Home() {
   const { loading, error, typeError, result } = useSelector(

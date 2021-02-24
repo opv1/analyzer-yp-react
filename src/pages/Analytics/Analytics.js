@@ -1,8 +1,8 @@
 import React from 'react'
 import Auxiliary from '../../scripts/Auxiliary/Auxiliary'
-import Navigation from '../../containers/Navigation/Navigation'
-import Coincide from '../../containers/Coincide/Coincide'
-import Graphic from '../../containers/Graphic/Graphic'
+import Navigation from '../../components/Navigation/Navigation'
+import Coincide from '../../components/Coincide/Coincide'
+import Graphic from '../../components/Graphic/Graphic'
 
 function Analytics() {
   const analytics = JSON.parse(localStorage.getItem('analyticsObject'))

@@ -1,5 +1,5 @@
 import React from 'react'
-import Swiper from '../../components/Swiper/Swiper'
+import Swiper from '../Swiper/Swiper'
 import classes from './Commits.module.scss'
 
 const Commits = ({ commits }) => {
